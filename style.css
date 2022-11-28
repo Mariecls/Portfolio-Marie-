@@ -5,6 +5,45 @@ padding : 0 2%;
 margin: 0; 
 }
 
+.title-projet{
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    font-size: 90px;
+    color: #6a6675;
+}
+.title-projet h1 {
+    margin: 2px;
+}
+.projet-mvc{
+    text-align: center;
+
+}
+.mvc-image   {
+   width: 100%;
+   
+        }
+.mvc-image  img {
+            margin: auto;
+            display: flex;
+          
+           
+                 }
+.mvc-content p {
+    text-align: center;
+}
+.projet-parking p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+.desc-parking p  {
+    text-align: center;
+}
+.desc-parking li  {
+    text-align: center;
+}
 nav{
     width: 100%;
     display : flex;
@@ -16,16 +55,10 @@ nav{
     top:0;
     background-color:white ;
 }
-<<<<<<< HEAD
 nav .profile{
     display: flex;
     align-items:center ;
     width: 250px;
-=======
-.profile{
-    display: flex;
-    align-items:center ;
->>>>>>> d904818218d8006516c1bbce54a6711d9087e05a
 }
 nav ul  {
     display: flex;
@@ -93,10 +126,7 @@ border : 10px solid rgba(111, 180, 37, 0.923);
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px ;
-<<<<<<< HEAD
     width: 250px;
-=======
->>>>>>> d904818218d8006516c1bbce54a6711d9087e05a
     
 }
 #bande3{
@@ -162,10 +192,6 @@ border : 10px solid rgba(111, 180, 37, 0.923);
     margin-top: 2px;
     padding: 0;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> d904818218d8006516c1bbce54a6711d9087e05a
   .button {
     background-color: #ae0ea3; /* Green */
     border: none;
@@ -223,6 +249,7 @@ border : 10px solid rgba(111, 180, 37, 0.923);
         font-weight: 500;
         margin : 5px;
         color: #1E90FF;
+        text-align: center;
          
         }
 .CV-image{
@@ -232,11 +259,21 @@ border : 10px solid rgba(111, 180, 37, 0.923);
            margin: 10px;
            text-align: center;
            }
+.lien {
+    display: flex;
+    flex-direction: row;
+      justify-content: center;
+    align-items: center;
+}
+    
+  
 
 label {
         margin-bottom: 7px;
         font-weight: 600;
         }
+
+
   
   @keyframes slidein {
     from {

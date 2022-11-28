@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+
+  
 		<meta charset="UTF-8">
 		<meta http-equiv ="X-UA-Compatible" content="IE=edge" >
 		<title> Portfolio Marie Ucles </title>
@@ -31,6 +33,8 @@
 					
                 <a href="contact.html">
                     <li> Contact </li>
+                    <a href="veille.html">
+                      <li>Veille</li>
                 </a>
             </ul>
 		</nav>
@@ -39,17 +43,20 @@
         <div class="contactez-moi">
           <h1>Contactez-moi</h1>
           <p>Une question ? N’hésitez pas à utiliser ce formulaire pour me contacter !</p>
-          <form action="" method="post">
+          <form action="" method="post" action="sendmail.php" >
           <div>
           <label for="nom">Votre nom</label>
-          <input type="text" id="nom" name="nom" placeholder="Marie" required>
+          <input type="text" id="nom" name="nom" placeholder="Nom" required>
+         
           </div>
           <label for="nom">Votre prénom</label>
-          <input type="text" id="nom" name="nom" placeholder="Ucles" required>
+          <input type="text" id="prenom" name="prenom" placeholder="Prenom" required>
+    
           
           <div>
           <label for="email">Votre e-mail</label>
           <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+       
           </div>
           <div>
           <label for="sujet">Quel est le sujet de votre message ?</label>
@@ -64,10 +71,13 @@
           <div>
           <label for="message">Votre message</label> <br>
           <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+          
           </div>
      
           <div>
-          <button type="submit">Envoyer mon message</button>
+            <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+          <button type="send">Envoyer mon message</button>
           </div>
         </div>
           </form>
