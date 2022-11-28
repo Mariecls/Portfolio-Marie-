@@ -11,7 +11,7 @@ margin: 0;
     text-transform: uppercase;
     font-family: 'Oswald',sans-serif;
     font-size: 90px;
-    color: #6a6675;
+    color:  #C0C0C0;
 }
 .title-projet h1 {
     margin: 2px;
@@ -30,6 +30,7 @@ margin: 0;
           
            
                  }
+                
 .mvc-content p {
     text-align: center;
 }
@@ -43,6 +44,22 @@ margin: 0;
 }
 .desc-parking li  {
     text-align: center;
+}
+.m2l-icone{
+    width: 100%;
+}
+.m2l-icone img {
+    margin: auto;
+            display: flex;
+}
+
+.parking-icone{
+    width: 100%;
+}
+.parking-icone img {
+    margin: auto;
+            display: flex;
+            width: 20%;
 }
 nav{
     width: 100%;
