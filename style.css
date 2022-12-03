@@ -5,6 +5,22 @@ padding : 0 2%;
 margin: 0; 
 }
 
+
+
+/* .section1{
+    background:  url('images/binaire.jpg') ;
+    border:none;
+    width: 100%;
+    background-size: 20px 10px; 
+    position: fixed;
+    top: 0;
+    z-index: 999 !important;
+    box-shadow: 0px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+ */
+
 .title-projet{
     text-align: center;
     margin: 0;
@@ -71,6 +87,7 @@ nav{
     position: sticky;
     top:0;
     background-color:white ;
+    
 }
 nav .profile{
     display: flex;
@@ -108,10 +125,12 @@ nav ul li:hover {
     max-width: 100%;
     height: auto;
    margin: 10px;
+
    }
 
    .presentation-image img {
 border : 10px solid rgba(111, 180, 37, 0.923);
+width: 100%;
    }
 
 
@@ -290,6 +309,26 @@ label {
         font-weight: 600;
         }
 
+  .quantum img{  
+    display: flex;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+  }
+.quantum-title h1 {
+    text-align: center;
+    width: 100%;
+    color:  #FFD700;
+}
+.quantum-question p {
+    text-align: center;
+    font-size: 30px;
+}
+.quantum-1 p{
+    text-align: center;
+    font-size: 15px;
+    
+}
 
   
   @keyframes slidein {
