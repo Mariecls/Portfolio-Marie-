@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+    background-color: $color__white;
+}
+
+::-webkit-scrollbar-thumb {
+    @include border-radius;
+    background: $color__green;
+}
+
+html {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: $color__green $color__white;
+
+    @include mobile{
+        overflow-x: hidden;
+    }
+}
+
+body {
+    font-size: clamp(rem(14px), 2vw, rem(16px));
+    font-family: $font__main;
+    transition: background-color, color .3s ease;
+    color: $color__blue;
+
+    @include mobile{
+        overflow-x: hidden;
+    }
+    
+    @include large-desktop {
+        background-image: url('#{$img-public-path}/background-leaf.svg'),
+        url('#{$img-public-path}/background-leaf.svg'),
+        url('#{$img-public-path}/background-leaf.svg');
+        background-position-y: 610px, 1130px, 1900px;
+        background-position-x: -30%, 130%, -30%;
+        background-repeat: no-repeat;
+    }
+}
+
+a {
+    color: $link__color;
+    text-decoration: underline;
+
+    &:hover {
+        color: $link__color-hover;
+    }
+}
+
+strong,
+b {
+    #main-content & {
+        color: $color__green;
+    }
+}
+
+.title {
+    color: $color__green;
+    font-weight: $font_weight__semibold;
+    font-size: rem(29px);
+
+    @include large-desktop {
+        font-weight: $font_weight__extrabold;
+        font-size: rem(39px);
+        margin-top: $xxxxl-gap;
+        margin-bottom: $xl-gap;
+    }
+
+    &-icon {
+        width: auto;
+        display: none;
+
+        @include large-desktop {
+            display: inline-block;
+        }
+    }
+}
+
+
+h2 {
+    font-size: rem(29px);
+    font-weight: $font_weight__semibold;
+    color: $color__green;
+}

@@ -1,0 +1,48 @@
+
+// Reset
+@import '~normalize.css';
+$material-icons-font-path: '../fonts/';
+@import 'material-icons/iconfont/material-icons.scss';
+@import 'aos/src/sass/aos.scss';
+
+// Mixins
+@import "mixins/mixins";
+@import "mixins/functions";
+@import "mixins/media-queries";
+ 
+// Variables
+@import 'variables/utils';
+@import 'variables/colors';
+@import 'variables/typography'; 
+@import 'variables/breakpoint';
+@import 'variables/gaps';
+
+
+// Utilities
+@import "utilities/accessibility";
+@import "utilities/flags";
+
+// Structure
+@import 'structure/document';
+@import 'structure/header';
+@import 'structure/menu';
+@import 'structure/buttons';
+@import 'structure/footer';
+
+// Components
+@import 'structure/components/hero';
+@import 'structure/components/engagement';
+@import 'structure/components/last-achievements';
+@import 'structure/components/responsibility-engagements';
+@import 'structure/components/modal';
+@import 'structure/components/forms';
+
+// Pages
+@import 'structure/pages/about';
+@import 'structure/pages/engagements';
+@import 'structure/pages/nos-clients';
+@import 'structure/pages/products';
+@import 'structure/pages/nos-services';
+@import 'structure/pages/contact';
+
+

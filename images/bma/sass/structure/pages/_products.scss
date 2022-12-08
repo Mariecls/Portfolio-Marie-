@@ -1,0 +1,118 @@
+.products {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $s-gap;
+
+
+    @include large-desktop {
+        grid-template-columns: repeat(3, 1fr);
+        gap: $xl-gap;
+        margin-top: $xxxxl-gap;
+    }
+
+    &-global {
+        position: relative;
+    }
+
+    &-item {
+        @include large-desktop {
+            border-bottom: 1px solid $color__graphite;
+            padding-bottom: $xs-gap;
+        }
+
+        &-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+
+            @include safari {
+                @include mobile {
+                    max-height: 188px;
+                }
+            }
+
+            &-container {
+                aspect-ratio: 1/1;
+                box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.16);
+                overflow: hidden;
+                &.empty {
+                    background-color: #ACACAC;
+                }
+            }
+        }
+
+        &-title {
+            font-size: rem(16px);
+            color: $color__blue;
+            transition: all .3s ease;
+        }
+
+        &.active {
+            .products-item-title {
+                color: $color__green;
+                font-weight: $font_weight__bold; 
+            }
+            .products-item-image {
+                animation: 1s cubic-bezier(0, 0, 0.26, 0.77) 1 normal thats_here;
+            }
+
+            border-bottom: 2px solid $color__green;
+        }
+    }
+
+
+    &-sticky {
+        position: absolute;
+        top: $giga-gap + 20;
+        height: 100%;
+        display: none;
+
+        @include large-desktop {
+            display: block;
+        }
+
+        &-list {
+            @include reset-list;
+            margin-bottom: $l-gap;
+            position: sticky;
+            top: 150px;
+            padding-left: $m-gap;
+            border-left: 7px solid $color__green;
+            line-height: 1;
+
+
+            &_item {
+                margin-bottom: $m-gap;
+
+                a {
+                    display: inline-block;
+                    font-size: rem(14px);
+                    color: $color__green;
+                    text-decoration: none;
+                    transition: transform .3s ease;
+
+                    &:hover {
+                        transform: translateX(10px);
+                    }
+
+                    &.active {
+                        transform: translateX(10px);
+                        font-weight: $font_weight__bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes thats_here {
+        
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.3);
+        }
+    }

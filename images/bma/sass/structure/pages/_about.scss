@@ -1,0 +1,154 @@
+.page-template-page-about .title {
+
+  @include mobile {
+    text-align: start;
+    margin: $l-gap 0;
+    // max-width: 100%;
+    align-content: start;
+  }
+
+  &-icon {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.page-template-page-about {
+  #main-content {
+    strong {
+      font-weight: 500;
+      color: $color__blue;
+      @include mobile {
+        font-weight: bold;
+        color: $color__blue;
+      }
+    }
+  }
+}
+
+.about {
+  &-items {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    &:nth-child(even) {
+      align-self: flex-end;
+
+      @include mobile {
+        align-self: flex-start;
+      }
+    }
+
+    &_content {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      padding-left: $giga-gap + 20;
+      margin: $xxl-gap $xxl-gap $xxl-gap $l-gap;
+      box-sizing: content-box;
+      max-width: rem(335px);
+      font-family: "Montserrat";
+
+      // display:flex;
+      @include mobile {
+        text-align: start;
+        padding-left: 0;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+
+    &_number {
+      font-size: 16.5625rem;
+      font-family: "Radio Canada", sans-serif;
+      line-height: 1;
+      position: absolute;
+      color: $color__green;
+      opacity: 0.2;
+      font-size: rem(280px);
+
+      line-height: 1;
+
+      @include mobile {
+        font-size: 80px;
+
+        position: inherit;
+      }
+    }
+
+    &-p {
+      font-size: 10px;
+    }
+
+    &_title {
+      font-size: rem(35px);
+      margin-bottom: $s-gap;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      @include mobile {
+        font-size: 22px;
+        max-width: 100%;
+        color: $color__blue;
+      }
+    }
+
+    &_description {
+      font-family: "Montserrat";
+      margin-top: 18px;
+
+      #main-content & {
+        @include mobile {
+          max-width: 100%;
+
+          font-weight: inherit;
+          font-size: 14px;
+        }
+      }
+    }
+
+    hr {
+      width: 35%;
+      height: 2px;
+      background-color: $color__blue;
+      border: none;
+      margin: $m-gap auto;
+      opacity: 1;
+      align-self: stretch;
+
+      @include mobile {
+        align-self: center;
+        margin: 0 auto 0 0;
+        width: 10%;
+      }
+    }
+  }
+
+  .cta-button {
+    margin-top: $giga-gap;
+    color: $color__blue;
+    font-size: 14px;
+    font-weight: bold;
+    @include mobile {
+      text-align: center;
+      width: 337px;
+    
+    }
+  }
+}
