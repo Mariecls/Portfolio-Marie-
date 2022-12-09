@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,10 +58,44 @@ html {
     --couleur-text-sombre: #191932;
 }
 
-.text {
+.text, .title {
     color: var(--couleur-text-lumineux);
     font-family: sans-serif;
     font-family: "Montserrat";
+}
+
+.text .strong {
+	font-weight: bold;
+}
+
+.title {
+	font-size: 36px;
+    margin: 0;
+	margin-bottom: 9vh;
+    margin-left: 14px;
+    position: relative;
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-right: 14px;
+}
+
+.title::before {
+	content: '';
+    background-image: url(../images/dots-bg-light.svg);
+    display: block;
+    height: 37px;
+    left: -14px;
+    top: -14px;
+    position: absolute;
+    width: 37px;
+}
+
+.container {
+	padding: 2em 0;
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .page {
@@ -92,7 +121,7 @@ html {
 .navigation .liste .item {
     display: inline-block;
     box-sizing: border-box;
-    padding: 1em 3vw;
+    padding: 1em 2vw;
     font-size: 1.1rem;
 }
 
@@ -102,10 +131,11 @@ html {
     min-height: 100vh;
     box-sizing: border-box;
     padding: 2em;
+	padding-right: calc(2em + 18px); /* fix la taille de l'ascenseur */
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: white;
+    background-color: #353353;
 }
 
 .section#accueil {
@@ -276,6 +306,228 @@ html {
     font-size: 1.5em;
 }
 
-.footer {
+.section#presentation {
 
+}
+
+.section#presentation .content {
+
+}
+
+.section#presentation .content .top,
+.section#presentation .content .bottom {
+	display: flex;
+}
+
+.section#presentation .content .top {
+	margin-bottom: 2em;
+}
+
+.section#presentation .content .top .left {
+	width: 30%;
+	max-width: 300px;
+	text-align: center;
+}
+
+.section#presentation .content .top .left .bloc-img {
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+}
+
+.section#presentation .content .top .left .bloc-img img {
+	max-width: 100%;
+	position: relative;
+}
+
+.section#presentation .content .top .bloc-img::before {
+	position: absolute;
+	content: "";
+	background-color: #302f4e;
+	width: 20px;
+	height: 20px;
+	right: calc(-45px - 5%);
+	top: calc(50% - 10px);
+	transform: rotate(45deg);
+}
+
+.section#presentation .content .top .right {
+	width: 100%;
+	padding: 1.5em 2em;
+	margin-left: 2rem;
+	border-radius: 20px;
+	background-color: #302f4e;
+	display: flex;
+	position: relative;
+}
+
+.section#presentation .content .top .right .presentation {
+	margin-right: 2rem;
+	width: 50%;
+}
+
+.section#presentation .content .top .right .presentation .text {
+	margin-bottom: 1.5em;
+	font-size: .9rem;
+	line-height: 1.5rem;
+}
+
+.section#presentation .content .top .right .presentation .bt {
+	background-color: var(--couleur-secondaire);
+	padding: .7em 2em;
+	border-radius: 50px;
+	font-size: .9rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-bottom: 0;
+	box-shadow: 0 0 25px -5px rgba(73, 253, 150, .6);
+	transition: .3s all;
+}
+
+.section#presentation .content .top .right .presentation .bt:hover {
+	transform: scale(0.95);
+}
+
+.section#presentation .content .top .right .talents {
+	width: 50%;
+}
+
+.section#presentation .content .top .right .talents .bloc {
+	margin-bottom: .5em;
+	position: relative;
+	margin-bottom: 1em;
+	z-index: 15;
+}
+
+.section#presentation .content .top .right .talents .bloc .name {
+	font-size: .9rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.section#presentation .content .top .right .talents .bloc .name .score {
+	font-weight: normal;
+	float: right;
+}
+
+.section#presentation .content .top .right .talents .bloc .progress-bar {
+	content: "";
+	border-radius: 15px;
+	height: 8px;
+}
+
+.section#presentation .content .top .right .talents .bloc .progress-bar::before {
+	content: "";
+	border-radius: 15px;
+	height: 8px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	background-color: #353353;
+	z-index: -1;
+}
+
+.progress-bar.green {
+	background-color: var(--couleur-secondaire);
+}
+
+.section#presentation .content .bottom {
+	margin-top: 9vh;
+}
+
+.section#presentation .content .bottom .bloc {
+	width: 150px;
+	padding: 0 1em;
+	display: flex;
+	margin: 0 auto;
+}
+
+.section#presentation .content .bottom .bloc .left {
+
+}
+
+.section#presentation .content .bottom .bloc .left .ico {
+	color: white;
+	font-size: 2rem;
+	margin-right: 10px;
+}
+
+.section#presentation .content .bottom .bloc .right {
+	font-size: .9rem;
+	line-height: 1.5rem;
+}
+
+.section#presentation .content .bottom .bloc .right .score {
+	font-size: 1.5rem;
+	display: block;
+	font-weight: bold;
+	line-height: 2rem;
+}
+
+.section#contact {
+	min-height: 90vh;
+}
+
+.section#contact .content {
+
+}
+
+.section#contact .content .top {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 10vh;
+}
+
+.section#contact .content .bottom {
+	display: flex;
+}
+
+.section#contact .content .bottom .bloc {
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section#contact .content .bottom .bloc .ico {
+	color: white;
+	font-size: 4rem;
+}
+
+.section#contact .content .bottom .bloc .text {
+	padding-top: 1em;
+	font-size: .9rem;
+	line-height: 1.5rem;
+}
+
+.section#contact .content .bottom .bloc .text .value {
+	display: block;
+	font-weight: bold;
+	padding-top: 1em;
+	margin-top: 1em;
+	position: relative;
+	color: var(--couleur-secondaire);
+	letter-spacing: 1px;
+}
+
+.section#contact .content .bottom .bloc .text .value::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 1px;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+}
+
+.footer {
+	z-index: 10;
+	background-color: #302f4e;
+	text-align: center;
+	font-size: .8em;
+	letter-spacing: 2px;
+	height: 10vh;
+	line-height: 10vh;
 }

@@ -1,78 +1,237 @@
 <!DOCTYPE html>
+
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv ="X-UA-Compatible" content="IE=edge" >
-		<title> Portfolio Marie Ucles </title>
-		<link  rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<nav>
-			<div class="profile">
-				<img src="images/profile.jpg" alt="profile photo">
-				<h1>Portfolio Marie Ucles</h1>
-			</div>
-			<ul>
-				<a href="index.html"><li> Accueil</li></a>
-				<a href="formation.html"><li> Formation</li></a>
-				<a href="cv.html"><li> Curiculum Vitae</li></a>
-				<a href="mesprojets.html"><li> Mes projets </li></a>
-				<a href="stages.html"><li> Mes stages </li></a>
-				<a href="contact.html">
-					<li> Contact </li>
-					<a href="veille.html"><li>Veille</li></a>
-				</ul>
-			</nav>
-		</div>
-			<section class="page-content">
-				<header>
-					<h1>Bienvenue sur mon portfolio !</h1>
-				</section>
-			</section>
-		</header>
-		<section class="presentation-image">
-			<img src="images/main.jpg" alt="presentation-image">
-		</section>
-		<section class="title-presentation">
-			<h2>Qui suis-je ?</h2>
-			<div id="bande_horizontale"></div>
-			<p>
-				Je m'appelle Marie Ucles étudiante en
-				<strong>deuxième année de BTS SIO SLAM</strong>
-				au Lycée Charles de Foucauld à Paris.
-				<br>
-				Après l'obtention de mon Bac S en 2018 j'ai choisi d'entreprendre des études de tourisme.J'ai obtenu un BTS Tourisme puis un Bachelor Tourisme chargé de gestion commerciale en 2021.
-				<br>
-				Déjà attirée par l'informatique à la fin du lycée, j'ai finalement fait le choix de me réorienter en 2021 pour suivre des études dans un domaine qui m'intéresse tout particulièrement.
-			</p>
-			<section class="title-competences">
-				<h2>Compétences sociales</h2>
-				<div id="horizontale2"></div>
-				<div id="competences">
-					<p id="competences">
-						Patiente
-						<br>
-						Dynamique
-						<br>
-						Flexible
-						<br>
-						Calme
-						<br>
-						A l'écoute
-						<br>
-						Adaptation
-						<br>
-						Volontaire
-						<br>
-						Esprit d'équipe
-					</p>
-				</div>
-			</section>
-		</section>
-		<footer></footer>
-		<h3>Portfolio Marie Ucles</h3>
-		<p>
-			&copy; Portfolio Marie Ucles
-		</p>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="assets/Montserrat/Montserrat.css">
+        <link rel="stylesheet" href="assets/fontello/css/fontello.css">
+
+        <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title>Portfolio</title>
+    </head>
+
+    <body class="page">
+        <nav class="navigation">
+            <ul class="liste">
+                <li><a href="#accueil" class="item text">Accueil</a></li>
+                <li><a href="#presentation" class="item text">Présentation</a></li>
+                <li><a href="#competences" class="item text">Compétences</a></li>
+                <li><a href="#parcours" class="item text">Parcours</a></li>
+                <li><a href="#realisations" class="item text">Réalisations</a></li>
+                <li><a href="#contact" class="item text">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="section" id="accueil">
+            <div class="bg-accueil"><img src="images/bg-accueil.jpg"></div>
+            <span class="left"><img src="images/portfolio.png"></span>
+
+            <div class="contenu">
+                <div class="bloc">
+                    <span class="primaire text">Marie</span>
+                    <span class="secondaire text">Ucles</span>
+                </div>
+            </div>
+
+            <div class="reseaux">
+                <ul class="liste">
+                    <li>
+                        <a href="#linkedin" class="item"><i class="ico icon-linkedin"></i></a>
+                        <span class="sous-titre text">Linkedin</span>
+                    </li>
+                    <li>
+                        <a href="#facebook" class="item"><i class="ico icon-facebook"></i></a>
+                        <span class="sous-titre text">Facebook</span>
+                    </li>
+                    <li>
+                        <a href="#twitter" class="item"><i class="ico icon-twitter"></i></a>
+                        <span class="sous-titre text">Twitter</span>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="bottom">
+                <a href="#presentation"><i class="ico icon-down-open-big"></i></a>
+            </span>
+        </section>
+
+        <section class="section" id="presentation">
+            <div class="container">
+                <h2 class="title">Présentation</h2>
+                <div class="content">
+                    <div class="top">
+                        <div class="left">
+                            <div class="bloc-img">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="presentation">
+                                <div class="text">
+                                    Lorem Ipsum is simply <span class="strong">dummy</span> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.
+                                </div>
+                                <a href="" class="bt text">Télécharger mon CV</a>
+                            </div>
+                            <div class="talents">
+                                <div class="bloc">
+                                    <div class="name text">
+                                        Conception
+                                        <span class="score">85%</span>
+                                    </div>
+                                    <div class="progress-bar green" style="width: 85%"></div>
+                                </div>
+                                <div class="bloc">
+                                    <div class="name text">
+                                        Blabla
+                                        <span class="score">100%</span>
+                                    </div>
+                                    <div class="progress-bar green" style="width: 100%"></div>
+                                </div>
+                                <div class="bloc">
+                                    <div class="name text">
+                                        Blabla
+                                        <span class="score">10%</span>
+                                    </div>
+                                    <div class="progress-bar green" style="width: 10%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bloc">
+                            <div class="left">
+                                <i class="ico icon-down-open-big"></i>
+                            </div>
+                            <div class="right text">
+                                <span class="score">8</span>
+                                Projets réalisés
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <div class="left">
+                                <i class="ico icon-down-open-big"></i>
+                            </div>
+                            <div class="right text">
+                                <span class="score">+2</span>
+                                Années d'expériences
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <div class="left">
+                                <i class="ico icon-down-open-big"></i>
+                            </div>
+                            <div class="right text">
+                                <span class="score">20</span>
+                                Ans
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <div class="left">
+                                <i class="ico icon-down-open-big"></i>
+                            </div>
+                            <div class="right text">
+                                <span class="score">3</span>
+                                Niveau Bac
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="competences">
+            <div class="container">
+                <h2 class="title">Compétences</h2>
+                <div class="content">
+                    <div class="bloc">
+                        img
+                        titre
+                        desc
+                    </div>
+                    <div>
+                        bloc 2
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="parcours">
+            <div class="container">
+                <h2 class="title">Parcours</h2>
+                <div>
+                    <div>
+                        Scolaire
+                    </div>
+                    <div>
+                        Pro
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="realisations">
+            <div class="container">
+                <h2 class="title">Réalisations</h2>
+                <div>
+                    <div>
+                        projet 1
+                    </div>
+                    <div>
+                        projet 2
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="title">Contact</h2>
+                <div class="content">
+                    <div class="top text">
+                        Discutons ensemble!
+                    </div>
+                    <div class="bottom">
+                        <div class="bloc">
+                            <i class="ico icon-down-open-big"></i>
+                            <div class="text">
+                                Sur les réseaux
+                                <span class="value">Facebook</span>
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <i class="ico icon-down-open-big"></i>
+                            <div class="text">
+                                Ou bien par
+                                <span class="value">Linkedin</span>
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <i class="ico icon-down-open-big"></i>
+                            <div class="text">
+                                Un petit mail
+                                <span class="value">marie.ucles@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="bloc">
+                            <i class="ico icon-down-open-big"></i>
+                            <div class="text">
+                                Appelez moi
+                                <span class="value">07 81 09 68 95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text">
+            © 2022 Marie Ucles
+        </footer>
+    </body>
 </html>
