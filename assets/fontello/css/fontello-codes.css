@@ -1,5 +1,13 @@
 
 .icon-down-open-big:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-check:before { content: '\e802'; } /* '' */
+.icon-gmail:before { content: '\e803'; } /* '' */
+.icon-docs:before { content: '\f0c5'; } /* '' */
+.icon-folder-empty:before { content: '\f114'; } /* '' */
+.icon-folder-open-empty:before { content: '\f115'; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-chart-line:before { content: '\f201'; } /* '' */
 .icon-github:before { content: '\f300'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
