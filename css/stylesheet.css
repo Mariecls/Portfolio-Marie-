@@ -466,6 +466,115 @@ html {
 	line-height: 2rem;
 }
 
+.section#competences {
+
+}
+
+.section#competences .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.section#competences .content .bloc {
+	width: 200px;
+	padding: 1em;
+	background-color: #302f4e;
+	border-radius: 10px;
+	margin : .5rem;
+	text-align: center;
+	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
+}
+
+.section#competences .content .bloc .bloc-img {
+	width: 150px;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-bottom: auto;
+}
+
+.section#competences .content .bloc .bloc-img img {
+	max-width: 100%;
+}
+
+.section#competences .content .bloc .text {
+	font-size: .9rem;
+	line-height: 1rem;
+}
+
+.section#competences .content .bloc .text .name {
+	font-size: 1rem;
+	display: block;
+	font-weight: bold;
+	margin-bottom: .5em;
+	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
+}
+
+.section#parcours {
+
+}
+
+.section#parcours .container {
+
+}
+
+.section#parcours .container .content {
+	display: flex;
+}
+
+.section#parcours .container .content .left,
+.section#parcours .container .content .right {
+	width: 50%;
+	margin-right: 1em;
+	padding: 2em;
+	background-color: #302f4e;
+    border-radius: 5px;
+	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
+}
+
+.section#parcours .container .content .bloc {
+	border-left: 1px solid white;
+	padding: 1.5em 0 0 0;
+	padding-left: 3em;
+}
+
+.section#parcours .container .content .text {
+	font-size: .9rem;
+	line-height: 1.2rem;
+	padding-bottom: 2em;
+	position: relative;
+}
+
+.section#parcours .container .content .text::before {
+	font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.5em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	padding: .7em;
+	position: absolute;
+	left: -3.4em;
+	top: -.6em;
+	content: '\f300';
+	background-color: #302f4e;
+	transform: translateX(-50%);
+}
+
+.section#parcours .container .content .text .name {
+	font-size: 1rem;
+	display: block;
+	margin-bottom: .5em;
+	letter-spacing: 1px;
+}
+
 .section#contact {
 	min-height: 90vh;
 }
