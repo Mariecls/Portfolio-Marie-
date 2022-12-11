@@ -630,6 +630,12 @@ html {
 	transform: translateX(-50%);
 	background-color: white;
 }
+.adb{
+	margin: auto;
+	display: flex;
+	width: 200px;
+
+}
 
 .footer {
 	z-index: 10;
@@ -640,3 +646,4 @@ html {
 	height: 10vh;
 	line-height: 10vh;
 }
+
