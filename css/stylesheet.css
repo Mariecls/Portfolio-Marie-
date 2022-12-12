@@ -50,6 +50,9 @@ html {
     overflow-y: auto;
 }
 
+
+
+
 :root {
     --couleur-primaire: #191932;
     --couleur-secondaire: #49FD96;
@@ -556,8 +559,8 @@ html {
 }
 
 .section#competences2 .content .bloc2 {
-	width: 3000px;
-	padding: 1em;
+	width: 5000px;
+	padding: 3em;
 	background-color: #302f4e;
 	border-radius: 10px;
 	margin : .5rem;
