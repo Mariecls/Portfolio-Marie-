@@ -1,0 +1,36 @@
+.engagement {
+
+    > .row{
+        margin-bottom: $xl-gap;
+    }
+    margin-bottom: $xxxxl-gap + 5;
+    &-item {
+        text-align: center;
+        margin: $xxxl-gap 0 0 0;
+
+        &_icon {
+
+            margin: 0 0 $xl-gap 0;
+
+            @include large-desktop {
+                min-height: rem(125px);
+            }
+
+            svg,
+            img {
+                width: rem(70px);
+
+                @include large-desktop {
+                    width: rem(125px);
+                }
+            }
+        }
+
+        &_description,
+        p {
+            @include xx-large-desktop {
+                padding: 0 $giga-gap * 3;
+            }
+        }
+    }
+}

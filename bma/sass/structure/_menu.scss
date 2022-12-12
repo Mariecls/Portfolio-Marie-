@@ -1,0 +1,152 @@
+.main {
+    &-nav {
+        &-container {
+            width: 100vw;
+            height: calc(var(--vh, 1vh) * 100 - $header-height);
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 20;
+            left: -100%;
+            top: $header-height;
+            font-size: rem(14px);
+            text-align: center;
+            background-color: $color__white;
+            transition: left .5s ease;
+            font-weight:$font_weight__medium;
+            
+            @include large-desktop {
+                
+                align-items: center;
+                flex-direction: row;
+                background-color: transparent;
+                width: auto;
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                top: auto;
+                left: auto;
+            }
+
+
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                left: 0;
+                transition: left .5s ease;
+            }
+        }
+
+        &-list {
+            @include reset-list;
+            line-height: rem(30px);
+            margin-bottom: 30px;
+
+            @include large-desktop {
+                display: flex;
+                margin-bottom: 0;
+                line-height: auto;
+            }
+
+            ul {
+                text-align: center;
+            }
+
+            li {
+                font-weight: $font_weight__semibold;
+
+                @include large-desktop {
+                    font-weight: $font_weight__medium;
+                }
+
+                &.menu-item-has-children {
+                    &::after {}
+                }
+
+                a{
+                    text-decoration: none; 
+                }
+            }
+
+
+            >li {
+                position: relative;
+
+                margin: $xs-gap;
+
+                @include large-desktop {
+                    margin: 0 $l-gap 0 0;
+                    display: flex;
+                    align-items: center;
+                    height: $header-height-desktop;
+                }
+
+                >a {
+                    &.active {
+                        +ul {
+                           visibility: visible;
+                            max-height: rem(500px);
+                            opacity: 1;
+                            padding: $l-gap 0;
+
+                            @include large-desktop {
+                                position: absolute;
+                                padding: $s-gap;
+                            }
+                        }
+                    }
+
+
+                }
+
+                &:hover {
+                    >ul {
+                        visibility: visible;
+                        opacity: 1;
+                        max-height: rem(500px);
+                        padding: $l-gap 0;
+
+                        @include large-desktop {
+                            position: absolute;
+                            padding: $s-gap;
+                        }
+                    }
+                }
+
+                >ul {
+                    @include reset-list;
+                    padding: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    max-height: 0;
+                    transition: max-height, opacity .3s linear;
+                    border-top: 1px solid $color__light-grey;
+                    border-bottom: 1px solid $color__light-grey;
+                    
+
+                    @include large-desktop {
+                        position: absolute;
+                        top: $header-height-desktop;
+                        text-align: left;
+                        background: rgba(255, 255, 255, .8);
+                        border: none;
+                    }
+
+                    >li {
+                        @include large-desktop {
+                            width: max-content;
+                        }
+
+                        >ul {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

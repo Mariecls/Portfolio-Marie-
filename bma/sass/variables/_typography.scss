@@ -1,0 +1,19 @@
+$font__main : 'Montserrat', sans-serif;
+$font__number : 'Radio Canada', sans-serif;
+$font__title : $font__main;
+
+$font_weight__light: 300;
+$font_weight__normal: 400;
+$font_weight__medium: 500;
+$font_weight__semibold: 600;
+$font_weight__bold: 700;
+$font_weight__extrabold: 800;
+
+$bootstrap-icons-font: "bootstrap-icons" !default;
+$bootstrap-icons-font-src: url("#{$font-public-path}/bootstrap-icons.woff2") format("woff2"),
+url("#{$font-public-path}/bootstrap-icons.woff2") format("woff") !default;
+
+@font-face {
+  font-family: $bootstrap-icons-font;
+  src: $bootstrap-icons-font-src;
+} 

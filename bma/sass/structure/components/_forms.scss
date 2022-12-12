@@ -1,0 +1,90 @@
+// Structures in CF7 plugins
+
+.wpcf7 {
+
+    margin-top: $xxl-gap;
+
+    &-text,
+    &-tel,
+    textarea {
+        padding: $s-gap;
+        border: 1px solid $color__light-grey;
+        border-radius: 0;
+        color: $color__blue;
+        width: 100%;
+
+        &:focus-visible,
+        &:focus {
+            outline: none;
+            border: 2px solid $color__blue;
+        }
+
+        &::placeholder {
+            color: $color__blue;
+        }
+    }
+
+    &-submit {
+        @include cta-button($background: linear-gradient(90deg, rgba(6, 76, 145, 1) 0%, rgba(20, 51, 81, 1) 100%),
+            $color: $color__white,
+            $background-hover: $color__blue,
+        );
+        align-self: start;
+        text-transform: uppercase;
+    }
+
+    &-response-output {
+        .wpcf7 form & {
+            margin: $s-gap 0;
+        }
+    }
+
+    &-spinner {
+        margin: 0;
+        display: none;
+    }
+
+    .call-us-form {
+        display: flex;
+        align-items: center;
+
+        #phone-number-modal {
+            width: 100%;
+        }
+
+        .wpcf7-submit {
+            margin-left: $xxl-gap;
+        }
+
+
+    }
+
+    .contact-us-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .wpcf7-form-control-wrap {
+            width: 100%;
+            margin: 0 0 $m-gap 0;
+
+            @include tablet {
+                width: calc(50% - 5px);
+            }
+
+            &.your-message {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+
+        .wpcf7-submit {
+            margin: 0;
+        }
+    }
+
+
+}

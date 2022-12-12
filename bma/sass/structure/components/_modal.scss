@@ -1,0 +1,57 @@
+.modal {
+
+    &-dialog {
+        @include tablet {
+            max-width: rem(600px);
+        }
+    }
+
+    &-backdrop {
+        background-color: $color__blue;
+
+        &.show {
+            opacity: .65;
+        }
+    }
+
+    &-content {
+        border-radius: 0;
+        border: none;
+        color: $color__blue;
+        font-size: rem(14px);
+
+        strong {
+            color: $color__green;
+        }
+    }
+
+    &-header {
+        padding: $l-gap $l-gap 0 0;
+    }
+
+    &-header {
+        border-bottom: none;
+    }
+
+    &-body {
+        padding: 0 $xxxxl-gap $xxxxl-gap $xxxxl-gap;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+    &-title {
+        font-size: rem(22px);
+        font-weight: $font_weight__semibold;
+        margin-bottom: $xl-gap;
+
+        @include large-desktop {
+            font-size: rem(36px);
+        }
+    }
+}

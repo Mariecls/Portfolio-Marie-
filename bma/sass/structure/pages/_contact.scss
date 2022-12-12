@@ -1,0 +1,76 @@
+.contact {
+    &-blocks {
+        margin-bottom: $xxl-gap;
+
+        @include large-desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $xxl-gap;
+            margin-bottom: $xxxxl-gap + 5;
+        }
+    }
+
+    &-block {
+        position: relative;
+        border: 1px solid $color__blue;
+        margin-top: $giga-gap;
+        padding: $giga-gap + 20 $l-gap $xxxl-gap $l-gap;
+
+        &_icon {
+            display: block;
+            width: rem(60px);
+            height: rem(60px);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            background-color: $color__white;
+            border: 1px solid $color__blue;
+            border-radius: 50%;
+
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+
+        &_description {
+            margin-bottom: $xxxl-gap;
+            text-align: center;
+        }
+    }
+
+    &-localisations {
+        @include large-desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: $xxl-gap;
+        }
+    }
+
+    &-localisation {
+        &_title {
+            margin-bottom: $xl-gap;
+            font-size: rem(22px);
+            color: $color__blue;
+            @include large-desktop {
+                font-size: rem(36px); 
+            }
+        }
+
+        &-description {
+
+            &_title {
+                font-size: rem(18px);
+                color: $color__green;
+                font-weight: $font_weight__semibold;
+                @include large-desktop {
+                font-size: rem(20px);
+            }
+            }
+        }
+    }
+}
