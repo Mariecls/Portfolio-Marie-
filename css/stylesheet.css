@@ -555,6 +555,42 @@ html {
 	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
 }
 
+.section#competences2 .content .bloc2 {
+	width: 3000px;
+	padding: 1em;
+	background-color: #302f4e;
+	border-radius: 10px;
+	margin : .5rem;
+	text-align: center;
+	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
+}
+
+.section#competences2 .content .bloc .bloc2-img {
+	width: 100px;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-bottom: auto;
+}
+
+.section#competences2 .content .bloc .bloc2-img img {
+	width: 250px;
+	max-width: 100%;
+}
+
+.section#competences2 .content .bloc2-img .text {
+	font-size: .9rem;
+	line-height: 1rem;
+}
+
+.section#competences2 .content .bloc2-img .text .name {
+	font-size: 1rem;
+	display: block;
+	font-weight: bold;
+	margin-bottom: .5em;
+	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
+}
+
+
 .section#parcours {
 
 }
