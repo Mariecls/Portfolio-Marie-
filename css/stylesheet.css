@@ -568,25 +568,40 @@ html {
 	box-shadow: 3px 3px 20px -5px rgba(48, 47, 78, 1);
 }
 
-.section#competences2 .content .bloc .bloc2-img {
-	width: 100px;
-	margin: 0 auto;
-	padding-bottom: 1em;
-	margin-bottom: auto;
+
+
+
+.section#competences2 .content .bloc2 p {
+	
+	margin: 10px;
+	
 }
 
-.section#competences2 .content .bloc .bloc2-img img {
+
+
+.section#competences2 .content  .bloc2-img img {
 	width: 250px;
 	max-width: 100%;
+	
+}
+
+.section#competences2 .content  .bloc2  text img  {
+	width: 250px;
+	max-width: 100%;
+	margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .section#competences2 .content .bloc2-img .text {
 	font-size: .9rem;
+	margin-bottom: 15px;
+    margin-top: 15px;
 	line-height: 1rem;
 }
 
 .section#competences2 .content .bloc2-img .text .name {
 	font-size: 1rem;
+	padding: 10px;
 	display: block;
 	font-weight: bold;
 	margin-bottom: .5em;
@@ -720,6 +735,7 @@ html {
 	margin: auto;
 	display: flex;
 	width: 200px;
+	margin-top: 10px;
 
 }
 
