@@ -721,6 +721,14 @@ html {
 	letter-spacing: 1px;
 }
 
+.bloc2#veille h2{
+padding-right: 695px;
+
+}
+
+
+
+
 .section#contact .content .bottom .bloc .text .value::before {
 	content: "";
 	position: absolute;
